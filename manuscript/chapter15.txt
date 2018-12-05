@@ -1,0 +1,105 @@
+{book: true, sample: false}
+
+# Chapter 15 - Miscellaneous 
+
+
+#### How can we get the browser's details using PHP?
+
+One of the environemnt variables set by PHP is `HTTP_USER_AGENT` which identifies the user's browser and operating system.
+
+#### What is the use of Xdebug extension?
+
+Xdebug. It uses the DBGp debugging protocol for debugging. It is highly configurable and adaptable to a variety of situations.
+
+Xdebug provides following details in the debug information:
+
+- Stack and function trace in the error messages.
+- Full parameter display for user defined functions.
+- Displays function name, file name and line indications where the error occurs.
+- Support for member functions.
+- Memory allocation
+
+It can also be used for:
+- Profiling information for PHP scripts.
+- Code coverage analysis.
+
+#### What is the purpose of php.ini file?
+
+The PHP configuration file, php.ini, is the final and most immediate way to affect PHP's functionality. The php.ini file is read each time PHP is initialized.in other words, whenever httpd is restarted for the module version or with each script execution for the CGI version. If your change isn.t showing up, remember to stop and restart httpd. If it still isn.t showing up, use phpinfo() to check the path to php.ini.
+
+#### What is curl?
+
+cURL is a library that lets you make HTTP requests in PHP.
+
+```php
+  $curl_handle=curl_init();
+  curl_setopt($curl_handle,CURLOPT_URL,'http://www.google.com');
+  curl_setopt($curl_handle,CURLOPT_CONNECTTIMEOUT,2);
+  curl_setopt($curl_handle,CURLOPT_RETURNTRANSFER,1);
+  $buffer = curl_exec($curl_handle);
+  curl_close($curl_handle);
+  if (empty($buffer)){
+      print "Nothing returned from url.<p>";
+  }
+  else{
+      print $buffer;
+  }
+```
+Then run it via commandline:
+
+`php < myphp.php`
+
+You ran myphp.php and executed those commands through the php interpreter and dumped a ton of messy html and javascript to screen.
+
+#### What is PDO in PHP?
+
+PDO stands for PHP Data Object.
+
+It is a set of PHP extensions that provide a core PDO class and database, specific drivers.
+It provides a vendor-neutral, lightweight, data-access abstraction layer. Thus, no matter what database we use, the function to issue queries and fetch data will be same.
+It focuses on data access abstraction rather than database abstraction.
+
+
+#### What is autoloading classes in PHP?
+
+With autoloaders, PHP allows the last chance to load the class or interface before it fails with an error.
+
+The `spl_autoload_register()` function in PHP can register any number of autoloaders, enable classes and interfaces to autoload even if they are undefined.
+
+```php
+spl_autoload_register(function ($classname) {
+    include  $classname . '.php';
+});
+$object  = new Class1();
+$object2 = new Class2(); 
+```
+
+In the above example we do not need to include Class1.php and Class2.php. The `spl_autoload_register()` function will automatically load Class1.php and Class2.php.
+
+#### Discuss die().
+
+While writing your PHP program you should check all possible error condition before going ahead and take appropriate action when required.
+
+```php
+if(!file_exists("/tmp/test.txt")) {
+    die("File not found");
+}else{
+    $file = fopen("/tmp/test.txt","r");
+    print "Opend file sucessfully";
+}
+```
+This way you can write an efficient code. Using above technique you can stop your program whenever it errors out and display more meaningful and user friendly message.
+
+#### What are variable variable?
+
+Consider:
+
+```php
+$World = "Foo";
+$Hello = "World";
+$a = "Hello";
+
+$a; //Returns Hello
+$$a; //Returns World
+$$$a; //Returns Foo
+```

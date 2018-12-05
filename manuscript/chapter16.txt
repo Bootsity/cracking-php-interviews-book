@@ -1,0 +1,55 @@
+{book: true, sample: false}
+
+# Chapter 16 - New features in PHP 7
+
+
+#### What are return type declarations?
+
+Example:
+
+```php
+function getTotal(float $a, float $b) : float {
+}
+```
+
+
+#### Explain the Exception Hierarchy introduced in PHP 7?
+
+New Hierarchy:
+
+```
+ |- Exception implements Throwable
+       |- …
+    |- Error implements Throwable
+        |- TypeError extends Error
+        |- ParseError extends Error
+        |- ArithmeticError extends Error
+            |- DivisionByZeroError extends ArithmeticError
+        |- AssertionError extends Error
+```        
+        
+        
+#### What is use of Spaceship Operator?
+ 
+Return 0 if values on either side are equal
+Return 1 if value on the left is greater
+Return -1 if the value on the right is greater
+
+Example:
+
+```php
+$compare = 2 <=> 1
+2 < 1? return -1
+2 = 1? return 0
+2 > 1? return 1
+```
+
+#### What is use of Null Coalesce Operator?
+
+Null coalescing operator returns its first operand if it exists and is not NULL Otherwise it returns its second operand.
+
+Example:
+
+```php
+$name = $firstName ?? $username ?? $placeholder ?? "Guest"; 
+```
