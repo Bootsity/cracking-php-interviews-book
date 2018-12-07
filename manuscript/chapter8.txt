@@ -9,7 +9,7 @@
 Example:
 
 ```php
-//create text file
+// create text file
 touch("data.txt");
 ```
 
@@ -20,15 +20,15 @@ An alternative way to write data to a file is to create a file pointer with `fop
 Example:
 
 ```php
-//open and lock file 
+// open and lock file 
 $fo=fopen("output.txt","w");
 flock($fo,LOCK_EX) or die('ERROR:cannot lock file');
 
-//write string to file
+// write string to file
 $data="A fish out of water";
-fwrite($fo,$data);
+fwrite($fo, $data);
 
-//unlock and close file
+// unlock and close file
 flock($fo,LOCK_UN) or die('ERROR:cannot unlock file');
 fclose($fo);
 echo "Data written to file";
@@ -44,7 +44,7 @@ unlink( ) function is used to delete a file.
 
 Example:
 ```
-//delete text file
+// delete text file
 unlink("data.txt");
 ```
 
@@ -52,17 +52,17 @@ unlink("data.txt");
 
 Example:
 ```php
-//copy text file
+// copy text file
 copy("data.txt","update data.txt");
 ```
 
 #### How to rename file?
 
-rename( ) function is used to rename file.
+`rename()` function is used to rename file.
 
 Example:
 ```php
-//rename text file
+// rename text file
 rename("data.txt","update data.txt");
 ```
 
@@ -73,7 +73,7 @@ rename("data.txt","update data.txt");
 
 Example:
 ```php
-//check file existence
+// check file existence
 echo file_exists("Update resume.doc");
 ```
 
@@ -88,8 +88,8 @@ Output:
 
 Example:
 ```php
-//check real path of the file
-echo realpath("Update resume.doc");?>`
+// check real path of the file
+echo realpath("Update resume.doc");
 ```
 
 #### How to check size of the file in PHP?
@@ -98,8 +98,8 @@ The files length can be found using the `filesize()` function which takes the fi
 
 Example:
 ```php	
-//check file size
- echo filesize("notes.txt")." Bytes";
+// check file size
+echo filesize("notes.txt")." Bytes";
 ```
 
 Output:
@@ -113,9 +113,9 @@ Output:
 
 Example:
 ```php
-//write string to file
-$data="A fish out of water";
-file_put_contents("output.txt",$data) or die('ERROR:Can not write file');
+// write string to file
+$data = "A fish out of water";
+file_put_contents("output.txt", $data) or die('ERROR: Can not write file');
 echo "data written inside  this file";
 ```
 
@@ -127,9 +127,9 @@ Here’s an example which reads a file into an array and then displays it using 
 
 Example:
 ```php
-//read file into array
-$arr=file('output.txt') or die('ERROR: cannot file file');
-foreach($arr as $line){
+// read file into array
+$arr = file('output.txt') or die('ERROR: cannot file file');
+foreach ($arr as $line) {
     echo $line;
 } 
 ```
@@ -152,7 +152,7 @@ chmod(file,mode)
 There are following two ways to retrieve the file extension.
 
 ```php
-$filename = $_FILES[‘image’][‘name’];
+$filename = $_FILES['image']['name'];
 $ext = pathinfo($filename, PATHINFO_EXTENSION);`
 ```
 

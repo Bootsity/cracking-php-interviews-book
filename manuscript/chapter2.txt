@@ -120,8 +120,8 @@ To concatenate two string variables together, use the dot (.) operator.
 Example:
 
 ```php
-$string1="Hi! i am";
-$string2="50";
+$string1 = "Hi! i am";
+$string2 = "50";
 echo $string1 . " " . $string2;
 ```
 
@@ -150,8 +150,8 @@ However, sometimes you want a local variable to not be deleted then use static k
 Example:
 
 ```php
-function Test(){		
-	static $x=0;		
+function Test() {		
+	static $x = 0;		
 	echo $x;		
 	$x++;		
 }			
@@ -224,7 +224,7 @@ The `strtoupper()` function converts a string to uppercase and `strtolower()` fu
 Example:
 
 ```php
-echo strtoupper("Hello WORLD!").PHP_EOL;
+echo strtoupper("Hello WORLD!") . PHP_EOL;
 echo strtolower("Hello WORLD!");
 ```
 

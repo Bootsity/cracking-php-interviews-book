@@ -28,16 +28,16 @@ Switch statement works same as if statements. However the difference is that the
 
 ```php
 $flower = "rose";
-switch ($flower){
+switch ($flower) {
 	case "rose" : 
  		echo $flower." costs $2.50";
- 	break;
+ 		break;
 	case "daisy" : 
  		echo $flower." costs $1.25";
- 	break;
+ 		break;
 	case "orchild" : 
  		echo $flower." costs $1.50";
- 	break;
+ 		break;
 	default : 
  	    echo "There is no such flower in our shop";
  	break;
@@ -253,17 +253,17 @@ This 3 loops can be used to achieve infinite loops in PHP.
 Examples:
 
 ```php
-while(1)
+while (1)
 //statement`
 
-for(;;;)
+for (;;;)
 //statement`
 
-do{
+do {
 //statement
 }
 
-while(1){
+while (1) {
 }
 ```
 
@@ -273,7 +273,7 @@ In all the above 3 cases, the loops will execute infinite times as the condition
 
 Recursion is the phenomenon of calling a function from within itself.
 ```php
-function factorial($n){
+function factorial($n) {
 	// Base case
 	if ($n == 0) {
 		echo "Base case: \$n = 0. Returning 1...<br>";
@@ -306,9 +306,9 @@ When a break statement is encountered inside a loop, the loop is immediately ter
 
 Example:
 ```php
-for ($a=1; $a < 6; $a++){
+for ($a = 1; $a < 6; $a++) {
 	echo $a;
-	if ($a > 3){
+	if ($a > 3) {
 	    break;
 	}
 }
@@ -325,8 +325,8 @@ Output:
 The continue statement is used inside loops. When a continue statement is encountered inside a loop, control jumps to the beginning of the loop for next iteration, skipping the execution of statements inside the body of loop for the current iteration.
 
 ```php
-for ($a=1; $a < 6; $a++){
-	if ($a == 3){
+for ($a = 1; $a < 6; $a++) {
+	if ($a == 3) {
 		continue;
 	}
 	echo $a;
@@ -346,8 +346,7 @@ The declare construct is used to set execution directives for a block of code. T
 declare(ticks=1);
 
 // A function called on each tick event
-function tick_handler()
-{
+function tick_handler() {
 	echo "tick_handler() called\n";
 }
 

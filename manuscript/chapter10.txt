@@ -167,17 +167,17 @@ Class always start with `class` keyword. After this write class name without par
 
 ```php
 class demo{
-    function add(){   
-        $x=800;
-        $y=200;
-        $sum=$x+$y;
-        echo "sum of given no=".$sum."<br/>";	
+    function add() {   
+        $x = 800;
+        $y = 200;
+        $sum = $x + $y;
+        echo "sum of given no= ". $sum . "<br/>";	
     }
-    function sub(){
-        $x=1000;
-        $y=200;
-        $sub=$x-$y;
-        echo "Sub of given no=".$sub;	
+    function sub() {
+        $x = 1000;
+        $y = 200;
+        $sub = $x - $y;
+        echo "Sub of given no = " . $sub;	
     }
 }
 ```

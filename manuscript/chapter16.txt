@@ -8,7 +8,7 @@
 Example:
 
 ```php
-function getTotal(float $a, float $b) : float {
+function getTotal(float $a, float $b): float {
 }
 ```
 
