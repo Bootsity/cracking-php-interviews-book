@@ -10,7 +10,7 @@ Our vision is to make best book on PHP interviews.
 
 This vision can be achieved only with the active participation of the whole PHP community, readers and you.
 
-If you come across anything that should be corrected or improved or added, *please write to books@bootsity.com*. 
+If you come across anything that should be corrected or improved or added, *please write to echo@bootsity.com*. 
 
 We would be happy to make changes in the book with attributions to you.
 
