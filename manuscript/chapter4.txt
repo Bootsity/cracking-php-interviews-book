@@ -13,8 +13,8 @@ There are 3 types of arrays.
 
 Example:
 ```php
-$a = array(); //declaration
-$cars = array("Volvo", "BMW", "Toyota"); //initialization
+$a = array(); // declaration
+$cars = array("Volvo", "BMW", "Toyota"); // initialization
 ```
 
 #### How can you print an array in PHP?
@@ -150,9 +150,9 @@ Using the `array_merge()` method. The array_merge() function merges one or more 
 
 Example:
 ```php
-$a1=array("red","green");
-$a2=array("blue","yellow");
-print_r(array_merge($a1,$a2));
+$a1 = array("red", "green");
+$a2 = array("blue", "yellow");
+print_r(array_merge($a1, $a2));
 ```
 
 Output:

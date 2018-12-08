@@ -33,15 +33,14 @@ cURL is a library that lets you make HTTP requests in PHP.
 
 ```php
   $curl_handle=curl_init();
-  curl_setopt($curl_handle,CURLOPT_URL,'http://www.google.com');
-  curl_setopt($curl_handle,CURLOPT_CONNECTTIMEOUT,2);
-  curl_setopt($curl_handle,CURLOPT_RETURNTRANSFER,1);
+  curl_setopt($curl_handle, CURLOPT_URL, 'http://www.google.com');
+  curl_setopt($curl_handle, CURLOPT_CONNECTTIMEOUT, 2);
+  curl_setopt($curl_handle, CURLOPT_RETURNTRANSFER, 1);
   $buffer = curl_exec($curl_handle);
   curl_close($curl_handle);
-  if (empty($buffer)){
+  if (empty($buffer)) {
       print "Nothing returned from url.<p>";
-  }
-  else{
+  } else {
       print $buffer;
   }
 ```
@@ -81,11 +80,11 @@ In the above example we do not need to include Class1.php and Class2.php. The `s
 While writing your PHP program you should check all possible error condition before going ahead and take appropriate action when required.
 
 ```php
-if(!file_exists("/tmp/test.txt")) {
+if (!file_exists("/tmp/test.txt")) {
     die("File not found");
-}else{
-    $file = fopen("/tmp/test.txt","r");
-    print "Opend file sucessfully";
+} else {
+    $file = fopen("/tmp/test.txt", "r");
+    print "Opened file successfully";
 }
 ```
 This way you can write an efficient code. Using above technique you can stop your program whenever it errors out and display more meaningful and user friendly message.

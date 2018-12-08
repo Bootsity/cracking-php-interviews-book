@@ -35,7 +35,7 @@ In case of PHP call by value, actual value is not modified if it is modified ins
 Example:
 
 ```php  
-function adder($str2){  
+function adder($str2) {  
     $str2 .= 'Call By Value';  
 }  
 $str = 'Hello ';  
@@ -56,7 +56,7 @@ In case of call by reference, actual value is modified if it is modified inside 
 Example:
 
 ```php  
-function adder(&$str2){  
+function adder(&$str2) {  
     $str2 .= 'Call By Reference';  
 }
 $str = 'This is ';  
@@ -79,7 +79,7 @@ Using the `function` keyword.
 
 Example:
 ```php
-function foo($arg_1, $arg_2, /* ..., */ $arg_n){
+function foo($arg_1, $arg_2, /* ..., */ $arg_n) {
     echo "Example function.\n";
     return $retval;
 }
@@ -97,7 +97,7 @@ Actual arguments can be constant, variables, expressions etc.
 Arguments which are mentioned in the definition of the function is called formal arguments. Formal arguments are very similar to local variables inside the function. Just like local variables, formal arguments are destroyed when the function ends.
 
 ```php
-function factorial($n){
+function factorial($n) {
     // write logic here
 }
 ```
@@ -148,11 +148,11 @@ Yes but not in consecutive lines. We should then use the statements upon differe
 
 Example:
 ```php
-function demo(){
-if(condition)
-    return expression1;
-else
-    return expression2;
+function demo() {
+    if (condition)
+        return expression1;
+    else
+        return expression2;
 }
 ```
 
@@ -181,9 +181,9 @@ unlink('sample.html');
 
 ```php
 $val = 200;
-echo $val; //Out put will be 200
+echo $val; // Output will be 200
 $val1 = unset($val);
-echo $val1; //Output will be null
+echo $val1; // Output will be null
 ```
 
 ```php
@@ -212,10 +212,10 @@ The date() function returns a formatted string representing a date. You can exer
 After creating your objects, you will be able to call member functions related to that object. One member function will be able to process member variable of related object only. Following example shows how to set title and prices for the three books by calling member functions.
 
 ```php
-$physics−>setTitle( "Physics for High School" );
-$chemistry−>setTitle( "Advanced Chemistry" );
-$maths−>setTitle( "Algebra" );
-$physics−>setPrice( 10 );
-$chemistry−>setPrice( 15 );
-$maths−>setPrice( 7 );
+$physics−>setTitle("Physics for High School");
+$chemistry−>setTitle("Advanced Chemistry");
+$maths−>setTitle("Algebra");
+$physics−>setPrice(10);
+$chemistry−>setPrice(15);
+$maths−>setPrice(7);
 ```
