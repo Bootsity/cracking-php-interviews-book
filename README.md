@@ -12,7 +12,7 @@ You can download the book in PDF format on this URL - [https://bootsity.com/book
 
 ## Contributing
 
-You can create a pull request against this repo after adding your questions or write to us at books@bootsity.com
+You can create a pull request against this repo after adding your questions or write to us at echo@bootsity.com
 
 ## Authors
 
