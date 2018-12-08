@@ -10,7 +10,7 @@ Curated collection of PHP Interview Questions and Answers
 
 ## Contributing
 
-You can create a pull request against this repo after adding your questions or write to us at books@bootsity.com
+You can create a pull request against this repo after adding your questions or write to us at echo@bootsity.com
 
 ## Authors
 
