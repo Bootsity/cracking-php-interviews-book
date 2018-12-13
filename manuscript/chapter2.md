@@ -215,7 +215,17 @@ Output:
 
 #### How to find the position of a specific text in a string?
 
-`str_pos()` returns the position of the first occurrence of a string inside another string (case-sensitive).
+`strpos()` returns the position of the first occurrence of a string inside another string (case-sensitive). Also note that string positions start at 0, and not 1.
+
+```php
+echo strpos("I love Bootsity, PHP tutorials!","Bootsity");
+```
+
+Output:
+
+```
+7
+```
 
 #### How can you change cases in a string?
 
