@@ -65,13 +65,13 @@ rose costs $2.50
 
 #### What are the different types of operators?
 
-1. Arithmatic operators
+1. Arithmetic operators
 2. Assignment operators
 3. Logical operators
 4. Comparison operators
 5. Unary operators
 
-#### Explain arithmatic operators.
+#### Explain arithmetic operators.
 
 | Operator      | Use           |
 | ------------- |-------------|
@@ -157,7 +157,7 @@ There are several types of loops in PHP.
 #### Explain while loop with example.
 
 - The while loop evaluates the test expression.
-- If the test expression is true (nonzero), codes inside the body of while loop are exectued. The test expression is evaluated again. The process goes on until the test expression is false.
+- If the test expression is true (nonzero), codes inside the body of while loop are executed. The test expression is evaluated again. The process goes on until the test expression is false.
 - When the test expression is false, the while loop is terminated.
 
 Example:
