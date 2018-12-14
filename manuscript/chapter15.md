@@ -5,7 +5,7 @@
 
 #### How can we get the browser's details using PHP?
 
-One of the environemnt variables set by PHP is `HTTP_USER_AGENT` which identifies the user's browser and operating system.
+One of the environment variables set by PHP is `HTTP_USER_AGENT` which identifies the user's browser and operating system.
 
 #### What is the use of Xdebug extension?
 
@@ -44,7 +44,7 @@ cURL is a library that lets you make HTTP requests in PHP.
       print $buffer;
   }
 ```
-Then run it via commandline:
+Then run it via command line:
 
 `php < myphp.php`
 

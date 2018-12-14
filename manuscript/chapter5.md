@@ -19,8 +19,8 @@ A named section of a program that performs a specific task is called a function.
 #### Differentiate between parameterized and non parameterized functions.
 
 - Non parameterized functions don't take any parameter at the time of calling.
-- Parametrized functions take one or more arguments while calling. These are used at run time of the program when output depends on dynamic values given at run time
-There are two ways to access the parametrized function:
+- Parameterized functions take one or more arguments while calling. These are used at run time of the program when output depends on dynamic values given at run time
+There are two ways to access the parameterized function:
 1. call by value : (here we pass the value directly )
 2. call by reference : (here we pass the address location where the value is stored)
 

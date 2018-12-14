@@ -203,7 +203,7 @@ In php, there are three scopes for class members.
 2. Protected
 3. Private
 
-#### Explain accesss modifiers in PHP.
+#### Explain access modifiers in PHP.
 
 1. Public access modifier is open to use and access inside the class definition as well as outside the class definition.
 

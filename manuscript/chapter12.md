@@ -139,12 +139,12 @@ Following are different types of enctype.
 Mcrypt() supports many functions:
 
 - Mcrypt_cbc()- Encrypts data in Cipher block chain mode.
-- Mcrypt_cfb()- Encysrtpts data cipher feedback (CFB) mode
+- Mcrypt_cfb()- Encrypts data cipher feedback (CFB) mode
 - Mcrypt_decrypt()- Decrypts data.
 - mcrypt_encrypt- Encrypts plaintext with given parameters
-- mcrypt_generic- encrypts data
+- mcrypt_generic- Encrypts data
 - mcrypt_get_key_size - Get the key size of the specified cipher
-- mdecrypt_generic – dectpyts data
+- mdecrypt_generic – Decrypts data
 
 #### What is cryptography authentication?
 
