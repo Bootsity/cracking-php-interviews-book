@@ -388,34 +388,4 @@ This is $name website
 for PHP, Laravel and Angular Tutorials
 ```
 
-#### What is the function file_get_contents() useful for?
-
-`file_get_contents()` lets reading a file and storing it in a string variable.
-
-
-#### How is it possible to remove escape characters from a string?
-
-The `stripslashes()` function enables us to remove the escape characters before apostrophes in a string.
-
-
-#### Will a comparison of an integer 12 and a string "13" work in PHP?
-"13" and 12 can be compared in PHP since it casts everything to the integer type.
-
-#### Is it possible to protect special characters in a query string?
-
-Yes, we use the `urlencode()` function can be used to protect special characters.
-
-#### How to find the position of the first occurrence of a substring in a string
-`strpos()` is used to find the position of the first occurrence of a substring in a string.
-
-
-#### Distinguish between urlencode() and urldecode()?
-
-The `urlencode()` method is best while encoding a string to be used in a query part of a URL. It returns a string in which all non-alphanumeric characters except -_. is replaced with a percentege(%) sign.
-
-The `urldecode()` encodes URL to encode string as any % and other symbols are decoded.
-
-#### Is it possible to remove the HTML tags from data?
-
-The `strip_tags()` function enables us to clean a string from the HTML tags.
 
