@@ -52,15 +52,15 @@ rose costs $2.50
 
 #### Differentiate between switch and if-else statement.
 
-- *Check the testing expression*: An if-then-else statement can test expressions based on ranges of values or conditions, whereas a switch statement tests expressions based only on a single integer, enumerated value, or string.
+- **Check the testing expression**: An if-then-else statement can test expressions based on ranges of values or conditions, whereas a switch statement tests expressions based only on a single integer, enumerated value, or string.
 
-- *Switch is better for multi way branching*: When compiler compiles a switch statement, it will inspect each of the case constants and create a “jump table” that it will use for selecting the path of execution depending on the value of the expression. Therefore, if we need to select among a large group of values, a switch statement will run much faster than the equivalent logic coded using a sequence of if-elses. The compiler can do this because it knows that the case constants are all the same type and simply must be compared for equality with the switch expression, while in case of if expressions, the compiler has no such knowledge.
+- **switch is better for multi way branching**: When compiler compiles a switch statement, it will inspect each of the case constants and create a *jump table* that it will use for selecting the path of execution depending on the value of the expression. Therefore, if we need to select among a large group of values, a switch statement will run much faster than the equivalent logic coded using a sequence of if-elses. The compiler can do this because it knows that the case constants are all the same type and simply must be compared for equality with the switch expression, while in case of if expressions, the compiler has no such knowledge.
 
-- *if-else is better for boolean values*: if-else conditional branches are great for variable conditions that result into a boolean, whereas switch statements are great for fixed data values.
+- **if-else is better for boolean values**: if-else conditional branches are great for variable conditions that result into a boolean, whereas switch statements are great for fixed data values.
 
-- *Speed*: A switch statement might prove to be faster sometimes when there are more if-else in if-else ladder.
+- **Speed**: A switch statement might prove to be faster sometimes when there are more if-else in if-else ladder.
 
-- *Clarity in readability*: A switch looks much cleaner when you have to combine cases. if-else are quite vulnerable to errors too. Missing an else statement can land you up in havoc. Adding/removing labels is also easier with a switch and makes your code significantly easier to change and maintain.
+- **Clarity in readability**: A switch looks much cleaner when you have to combine cases. if-else are quite vulnerable to errors too. Missing an else statement can land you up in havoc. Adding/removing labels is also easier with a switch and makes your code significantly easier to change and maintain.
 
 
 #### What are the different types of operators?
@@ -94,7 +94,7 @@ stores the value 10 in the variable $a
 | ------------- |-------------|
 | &&      | It returns true, if both expression1 and expression2 are true. |
 | !     | It returns true, if expression is false.      |
-| || | It returns true, if either expression1 or expression2 or both of them are true.     |
+| `||` | It returns true, if either expression1 or expression2 or both of them are true.     |
 
 
 #### Explain the unary operators.
@@ -123,6 +123,7 @@ stores the value 10 in the variable $a
 The operator == casts between two different types if they are different, while the === operator performs a typesafe comparison that means it will only return true if both operands have the same type and the same value.
 
 Examples:
+
 ```php
 1 === 1: true
 1 == 1: true
@@ -138,7 +139,7 @@ Examples:
 | Pre-increment     | ++$a | increments $a by one, then returns $a. |
 | Post-increment     | $a++ | returns $a, then increments $a by one. |
 | Pre-decrement     | --$a | decrements $a by one, then returns $a. |
-|Post-decrement     | $a-- | returns $a, then decrements $a by one. |
+| Post-decrement     | $a-- | returns $a, then decrements $a by one. |
 
 
 #### What do you mean by operator overloading?
@@ -161,6 +162,7 @@ There are several types of loops in PHP.
 - When the test expression is false, the while loop is terminated.
 
 Example:
+
 ```php
 $x = 1; 
 while($x <= 5) {
@@ -170,6 +172,7 @@ while($x <= 5) {
 ```
 
 Output:
+
 ```
 The number is: 1 
 The number is: 2 
@@ -183,6 +186,7 @@ The number is: 5
 The do...while loop will always execute the block of code once, it will then check the condition, and repeat the loop while the specified condition is true.
 
 Example:
+
 ```php
 $x = 1; 
 do {
@@ -200,12 +204,14 @@ for (init counter; test counter; increment counter) {
 	code to be executed;
 }
 ``` 
+
 loop has 3 arguments.
 - init counter: Initialize the loop counter value
 - test counter: Evaluated for each loop iteration. If it evaluates to TRUE, the loop continues. If it evaluates to FALSE, the loop ends.
 - increment/decrement counter: Increases/decreases the loop counter value.
 
 Example:
+
 ```php
 for ($x = 0; $x <= 10; $x++) {
 	echo "The number is: $x <br>";
@@ -272,6 +278,7 @@ In all the above 3 cases, the loops will execute infinite times as the condition
 #### How can you implement recursion in PHP?
 
 Recursion is the phenomenon of calling a function from within itself.
+
 ```php
 function factorial($n) {
 	// Base case
@@ -305,6 +312,7 @@ The factorial of 5 is: 120
 When a break statement is encountered inside a loop, the loop is immediately terminated and the program control resumes at the next statement following the loop. It can be used to terminate a case in the switch statement.
 
 Example:
+
 ```php
 for ($a = 1; $a < 6; $a++) {
 	echo $a;
@@ -334,6 +342,7 @@ for ($a = 1; $a < 6; $a++) {
 ```
 
 Output:
+
 ```
 1235 (As it skipped 4 due to the continue statement)
 ```
