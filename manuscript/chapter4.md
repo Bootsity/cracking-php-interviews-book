@@ -7,11 +7,12 @@
 An array is a data structure which is a collection of elements having same datatype stored in a contiguous memory location.
 
 There are 3 types of arrays.
-1. *Indexed or Numeric Arrays*: An array with a numeric index where values are stored linearly.
-2. *Associative Arrays*: An array with a string index where instead of linear storage, each value can be assigned a specific key.
-3. *Multidimensional Arrays*: An array which contains single or multiple array within it and can be accessed via multiple indices.
+1. *Indexed or Numeric Arrays* : An array with a numeric index where values are stored linearly.
+2. *Associative Arrays* : An array with a string index where instead of linear storage, each value can be assigned a specific key.
+3. *Multidimensional Arrays* : An array which contains single or multiple array within it and can be accessed via multiple indices.
 
 Example:
+
 ```php
 $a = array(); // declaration
 $cars = array("Volvo", "BMW", "Toyota"); // initialization
@@ -27,10 +28,11 @@ print_r ($a);
 ```
 
 Output:
+
 ```php
 Array
 (
-	[a] => apple
+    [a] => apple
     [b] => banana
     [c] => Array
         (
@@ -156,6 +158,7 @@ print_r(array_merge($a1, $a2));
 ```
 
 Output:
+
 ```
 Array (
     [0] => red 
@@ -194,6 +197,7 @@ This function uses array keys as variable names and values as variable values. F
 This function returns the number of variables extracted on success.
 
 Example:
+
 ```php
 $a = "Original";
 $my_array = array("a" => "Cat","b" => "Dog", "c" => "Horse");
