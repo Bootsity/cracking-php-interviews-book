@@ -67,7 +67,7 @@ array(3) {
     [2]=>
     string(1) "c"
 	}
-	}
+}
 ```
 
 #### What do we mean by the base address of an array?
@@ -151,6 +151,7 @@ Array (
 Using the `array_merge()` method. The array_merge() function merges one or more arrays into one array.
 
 Example:
+
 ```php
 $a1 = array("red", "green");
 $a2 = array("blue", "yellow");
