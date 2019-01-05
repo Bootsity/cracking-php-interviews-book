@@ -335,7 +335,7 @@ The continue statement is used inside loops. When a continue statement is encoun
 
 ```php
 for ($a = 1; $a < 6; $a++) {
-	if ($a == 3) {
+	if ($a == 4) {
 		continue;
 	}
 	echo $a;
