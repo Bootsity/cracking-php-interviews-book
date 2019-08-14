@@ -9,7 +9,9 @@ An array is a data structure which is a collection of elements having same datat
 There are 3 types of arrays:
 
 *Indexed or Numeric Arrays* : An array with a numeric index where values are stored linearly.
+
 *Associative Arrays* : An array with a string index where instead of linear storage, each value can be assigned a specific key.
+
 *Multidimensional Arrays* : An array which contains single or multiple array within it and can be accessed via multiple indices.
 
 Example:
@@ -123,7 +125,9 @@ The explode() function breaks a string into an array.
 
 Syntax:
 
-`explode(separator,string,limit)`
+```php
+explode(separator,string,limit)
+```
 
 The "separator" parameter cannot be an empty string.
 
@@ -161,7 +165,7 @@ print_r(array_merge($a1, $a2));
 
 Output:
 
-```
+```php
 Array (
     [0] => red 
     [1] => green 
@@ -188,7 +192,9 @@ The `array_chunk()` function is used to split an array into parts or chunks of n
 
 Example:
 
-`array_chunk(array,size);`
+```php
+array_chunk(array,size);
+```
 
 The first parameter specifies an array and the second parameter defines the size of each chunk.
 
