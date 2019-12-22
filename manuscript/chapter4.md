@@ -79,27 +79,23 @@ The base address of an array is the memory location of the first element present
 
 #### What do we mean by keys and values?
 
-In associative arrays, we can use named keys that you assign to them.
-There are two ways to create an associative array: 
+In arrays, keys are used to fetch the values at a certain location.
+In associative arrays, we can use named key. 
+Index arrays use numbers starting from 0 by default.
 
 ```php
-// first way -
-
-$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");`
-
-// another method - 
+// Method 1:
 $age['Peter'] = "35"; //Peter, Ben & Joe are keys
 $age['Ben'] = "37"; //35, 37 & 43 are values
 $age['Joe'] = "43";
+
+// Shorthand:
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+
+// New in PHP 7:
+$age = [35,37,43];
+
 ```
-
-#### What are the keys & values in an indexed array?
-
-```php
-Array ( [0] => Hello [1] => world [2] => It's [3] => a [4] => beautiful [5] => day)
-```
-
-The keys of an indexed array are 0, 1, 2 etc(the index values) and values are "Hello", "world", "It's", "beautiful", "day".
 
 #### How can we convert array into string?
 
