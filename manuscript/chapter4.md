@@ -174,6 +174,22 @@ Array (
 
 `array_count_values()` function is used to count all the values of an array. PHP `array_count_values()` returns an array that has the values of given array as keys and their frequency in the array as values.
 
+```php
+<?php
+$a=array("Delhi","Pune","Agra","Delhi","Agra");
+print_r(array_count_values($a));
+```
+
+Output:
+```
+Array
+(
+    [Delhi] => 2
+    [Pune] => 1
+    [Agra] => 2
+)
+```
+
 #### How can we check if an element exists in an array?
 
 The `in_array()` function is used to search for the given string in an array. It returns TRUE if the given string is found in the array, and FALSE otherwise.
