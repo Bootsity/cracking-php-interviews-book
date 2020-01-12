@@ -194,9 +194,37 @@ Array
 
 The `in_array()` function is used to search for the given string in an array. It returns TRUE if the given string is found in the array, and FALSE otherwise.
 
+Example:
+```
+<?php
+$os = array("Mac", "NT", "Irix", "Linux");
+if (in_array("Irix", $os)) {
+    echo "Got Irix";
+}
+```
+
+Output:
+```
+Got Irix
+```
+
 #### Which function inserts an element to the end of an array?
 
 PHP `array_push()` function is used to insert one or more elements to the end of an array.
+
+Example:
+
+```php
+<?php
+$array1= array('Mathematics','Physics');
+array_push($array1,'Chemistry','Biology');
+print_r($array1);
+```
+
+Output:
+```
+Array ([0] => Mathematics [1] => Physics [2] => Chemistry [3] => Biology)
+```
 
 #### What is the use of array_chunk() function?
 
@@ -205,9 +233,33 @@ The `array_chunk()` function is used to split an array into parts or chunks of n
 Example:
 
 ```php
-array_chunk(array,size);
+<?php
+$cars=array("Volvo","BMW","Toyota","Honda","Mercedes","Opel");
+print_r(array_chunk($cars,2));
 ```
 
+Output:
+```
+Array
+(
+    [0] => Array
+        (
+            [0] => Volvo
+            [1] => BMW
+        )
+    [1] => Array
+        (
+            [0] => Toyota
+            [1] => Honda
+        )
+    [2] => Array
+        (
+            [0] => Mercedes
+            [1] => Opel
+        )
+
+)
+```
 The first parameter specifies an array and the second parameter defines the size of each chunk.
 
 #### Why do we use extract()?
