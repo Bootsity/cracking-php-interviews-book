@@ -6,31 +6,61 @@
 
 A named section of a program that performs a specific task is called a function. In this sense, a function is a type of procedure or routine.
 
-#### What are the different types of functions?
+A valid function name starts with a letter or underscore, followed by any number of letters, numbers, or underscores.
+
+Example:
+
+```php  
+// Function to say hello
+function functionToSayHello() {  
+    echo "Hello";
+}  
+
+// Function to find length of the string
+echo strlen ("Earth");
+```
+
+#### What are different types of functions?
+
+Types of functions on basis of definition
 
 1. Built-in functions
 2. User defined functions
 
-#### Classify function on basis of parameters.
+Types of functions on the basis on parameters
 
 1. Non parameterized function
 2. Parameterized function
 
-#### Differentiate between parameterized and non parameterized functions.
+Example:
 
-- Non parameterized functions don't take any parameter at the time of calling.
-- Parameterized functions take one or more arguments while calling. These are used at run time of the program when output depends on dynamic values given at run time
-There are two ways to access the parameterized function:
-1. call by value : (here we pass the value directly )
-2. call by reference : (here we pass the address location where the value is stored)
+```php  
+// Declaring user-defined function
+function thisIsUserDefinedFunc() {  
+    echo "Hello! from user defined function" 
+}  
 
-#### Does PHP support both call by cvalue and call by reference?
+function thisIsAnotherUserDefinedFunc($name) {  
+    echo "Hello! $name from user defined function" 
+} 
 
-Yes.
+// Calling user defined function
+thisIsUserDefinedFunc();
 
-#### Explain call by value.
+// Calling Built-in function
+echo strlen ("Earth");
 
-In case of PHP call by value, actual value is not modified if it is modified inside the function.
+// Non parameterized function 
+thisIsUserDefinedFunc();
+
+// Parameterised function 
+thisIsAnotherUserDefinedFunc("Rohit");
+?>
+```
+
+#### What do we mean by "call by value" of function
+
+When we call a function by value, the value of the parameterised variable is passed to the called function. Any changes to variable inside the called functions are not reflected to the original parameterised variable.
 
 Example:
 
@@ -49,7 +79,7 @@ Output:
 Hello
 ```
 
-#### Explain call by reference.
+#### What do we mean by "call by reference"
 
 In case of call by reference, actual value is modified if it is modified inside the function. In such case, we need to use `&` symbol with formal arguments. The & represents reference of the variable.
 
@@ -67,22 +97,6 @@ echo $str;
 Output:
 ```
 This is Call By Reference
-```
-
-#### What are the function declaration rules?
-
-A valid function name starts with a letter or underscore, followed by any number of letters, numbers, or underscores.
-
-#### How can we declare user defined functions?
-
-Using the `function` keyword.
-
-Example:
-```php
-function foo($arg_1, $arg_2, /* ..., */ $arg_n) {
-    echo "Example function.\n";
-    return $retval;
-}
 ```
 
 #### What do we mean by actual and formal parameters?
