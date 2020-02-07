@@ -2,6 +2,10 @@
 
 Curated collection of PHP Interview Questions and Answers 
 
+## Video Course
+
+You can get the video course on Udemy - [Udemy](https://www.udemy.com/course/cracking-php-interviews-questions-and-answers/?referralCode=C1AC62FD57C4423C1361)
+
 ## Getting the book
 
 You can download the book in PDF format on this URL - [https://bootsity.com/books](http://bootsity.com/books)
